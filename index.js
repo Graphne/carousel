@@ -2,11 +2,13 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
+  
   showSlides((slideIndex += n))
 }
 
 function currentSlide(n) {
-  showSlides((slideIndex = n));
+  slideIndex = n;
+  showSlides((slideIndex));
 }
 
 function showSlides(n) {
@@ -30,3 +32,9 @@ function showSlides(n) {
   dots[slideIndex - 1].className += " active";
   captionText.innerHTML = dots[slideIndex - 1].alt;
 };
+
+function showAlert() {
+  var myText = "This can be whatever text you like!";
+  alert (myText);
+}
+

@@ -11,6 +11,7 @@
     <h2 style="text-align:center">Slideshow Gallery</h2>
 
     <div class="container">
+      <div class=>
       <div class="mySlides">
         <div class="numbertext">1 / 6</div>
         <img src="https://cdn.britannica.com/24/189624-050-F3C5BAA9/Mona-Lisa-oil-wood-panel-Leonardo-da.jpg" style="width:100%">
@@ -40,9 +41,11 @@
         <div class="numbertext">6 / 6</div>
         <img src="https://cdn.britannica.com/31/3331-004-59797F9E/The-Virgin-and-Child-with-Saint-Anne.jpg?w=600&q=60" style="width:100%">
       </div>
+      </div>
         
-      <a class="prev" onclick="plusSlides(-1)">❮</a>
-      <a class="next" onclick="plusSlides(1)">❯</a>
+      <button class="prev" onclick="plusSlides(-1)">❮</button>
+      
+      <button class="next" onclick="plusSlides(1)">&#10095;</button>
     
       <div class="caption-container">
         <p id="caption"></p>
@@ -50,26 +53,31 @@
     
       <div class="row">
         <div class="column">
-          <img class="demo cursor" src="https://cdn.britannica.com/24/189624-050-F3C5BAA9/Mona-Lisa-oil-wood-panel-Leonardo-da.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Monalisa">
+          <img class="demo" src="https://cdn.britannica.com/24/189624-050-F3C5BAA9/Mona-Lisa-oil-wood-panel-Leonardo-da.jpg" style="width:100%" onclick="currentSlide(1)" alt="The Monalisa">
         </div>
         <div class="column">
-          <img class="demo cursor" src="https://cdn.britannica.com/04/95904-050-7EB39FC8/Last-Supper-wall-painting-restoration-Leonardo-da-1999.jpg" style="width:100%" onclick="currentSlide(2)" alt="The Last Supper">
+          <img class="demo" src="https://cdn.britannica.com/04/95904-050-7EB39FC8/Last-Supper-wall-painting-restoration-Leonardo-da-1999.jpg" style="width:100%" onclick="currentSlide(2)" alt="The Last Supper">
         </div>
         <div class="column">
-          <img class="demo cursor" src="https://cdn.britannica.com/45/198845-050-0555C7C0/Head-Woman-oil-earth-poplar-wood-lead.jpg" style="width:100%" onclick="currentSlide(3)" alt="The Head of a Woman">
+          <img class="demo" src="https://cdn.britannica.com/45/198845-050-0555C7C0/Head-Woman-oil-earth-poplar-wood-lead.jpg" style="width:100%" onclick="currentSlide(3)" alt="The Head of a Woman">
         </div>
         <div class="column">
-          <img class="demo cursor" src="https://cdn.britannica.com/46/198846-050-82EE84FC/Lady-Ermine-oil-panel-Leonardo-da-Vinci.jpg?w=600&q=60" style="width:100%" onclick="currentSlide(4)" alt="Lady With an Ermine">
+          <img class="demo" src="https://cdn.britannica.com/46/198846-050-82EE84FC/Lady-Ermine-oil-panel-Leonardo-da-Vinci.jpg?w=600&q=60" style="width:100%" onclick="currentSlide(4)" alt="Lady With an Ermine">
         </div>
         <div class="column">
-          <img class="demo cursor" src="https://cdn.britannica.com/81/197981-050-076495E8/Ginevra-de-Benci-oil-panel-Leonardo-da.jpg?w=600&q=60" style="width:100%" onclick="currentSlide(5)" alt="Ginevra de’ Benci (c. 1474/78)">
+          <img class="demo" src="https://cdn.britannica.com/81/197981-050-076495E8/Ginevra-de-Benci-oil-panel-Leonardo-da.jpg?w=600&q=60" style="width:100%" onclick="currentSlide(5)" alt="Ginevra de’ Benci (c. 1474/78)">
         </div>    
         <div class="column">
-          <img class="demo cursor" src="https://cdn.britannica.com/31/3331-004-59797F9E/The-Virgin-and-Child-with-Saint-Anne.jpg?w=600&q=60" style="width:100%" onclick="currentSlide(6)" alt="The Virgin and Child with Saint Anne (c. 1503–19)">
+          <img class="demo" src="https://cdn.britannica.com/31/3331-004-59797F9E/The-Virgin-and-Child-with-Saint-Anne.jpg?w=600&q=60" style="width:100%" onclick="currentSlide(6)" alt="The Virgin and Child with Saint Anne (c. 1503–19)">
         </div>
       </div>
     </div>
 
     <script src="index.js"></script>
+    <script>
+      function myFunction() {
+        alert("Hello! I am an alert box!");
+      }
+      </script>
   </body>
 </html>
